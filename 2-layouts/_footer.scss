@@ -1,0 +1,18 @@
+footer {
+  background: $main-color;
+  padding: 20px 30px 10px 30px;
+  text-align: center;
+  font-family: $font-stack-serif;
+  h5 {
+    margin-bottom: 10px;
+    color: white;
+    font-size: 18px;
+    // text-shadow: 1px 1px rgb(179, 178, 178);
+    font-weight: 500;
+  }
+  .webicons img {
+    // background: green;
+    width: 40px;
+
+  }
+}

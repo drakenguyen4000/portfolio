@@ -1,0 +1,56 @@
+.nav {
+    padding: 1% 5%;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: $main-color;
+    font-weight: $font-weight-standard;
+    font-family: $font-stack-sans-serif;
+    color: white;
+    z-index: 10;
+    div a {
+      margin: 20px 10px;
+      padding: 2px;
+    }
+    .social-media {
+      float: left;
+      font-size: 150%;
+    }
+    .navigations {
+      float: right;
+      font-size: 90%;
+    }
+  }
+  
+  a:link, a:visited {
+    color: white;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: blue;
+    text-decoration: underline;
+  }
+  
+  @media (max-width: 500px) {
+    .nav {
+      padding: 1% 0.2%;
+      display: grid;
+      grid-template-areas: "social-media
+      navigations";
+    }
+    .social-media {
+      text-align: center;
+      padding: 4% 5%;
+      a {
+        padding: 0 10px;
+      }
+    }
+  
+    .navigations {
+      text-align: center;
+      padding: 0.5% 0;
+      padding-bottom: 10px;
+    }
+  }
+  

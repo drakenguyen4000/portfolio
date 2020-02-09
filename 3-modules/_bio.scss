@@ -1,0 +1,12 @@
+.bio {
+  font-family: $font-stack-serif;
+  background: white;
+  border-radius: 2px;
+  margin-top: 80px;
+  padding: 4% 8%;
+  h1 {
+   @extend %margin-bottom;
+  }
+}
+
+

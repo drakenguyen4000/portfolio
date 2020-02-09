@@ -1,0 +1,14 @@
+.contact-page {
+    margin-top: 80px;
+    background: white;
+    padding: 4% 8%;
+    // box-shadow: 1px 1px #d6d6d6;
+    border: 1px solid $base-color2;
+    border-radius: 2px;
+    .contact-button {
+        display: flex;
+        align-items: center;
+        padding: 30px 50px;
+        margin-top: 130px;
+    }
+}

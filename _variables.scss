@@ -1,0 +1,26 @@
+//Global variables
+
+// $base-color: white;
+$base-color: #F5F6F7;
+$base-color2: white;
+$base-font-color: rgb(49, 49, 49);
+// $base-color: #d3d3d3;
+// $main-color: #f56a6a;
+$main-color: #6a9bf5;
+// $secondary-color: #fc8989;
+$secondary-color: #4484fa;
+// $third-color: #fc5050;
+$third-color: #347afd;
+
+$emphasis-color: rgb(43, 43, 43);
+$lite-emphasis-color: rgb(116, 116, 116);
+
+$font-stack-sans-serif: "Raleway", "Muli", "Lato", "sans-serif";
+$font-stack-serif:  "Cardo", "Vollkorn", "Merriweather", "serif";
+$font-weight-standard: 300;
+
+
+//inheritance
+%margin-bottom {
+    margin-bottom: 30px;
+  }

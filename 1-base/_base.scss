@@ -1,0 +1,60 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  background-color: $base-color;
+  color: $base-font-color;
+  font-family: $font-stack-serif;
+  font-weight: $font-weight-standard;
+  font-size: 20px;
+  text-rendering: optimizeLegibility;
+  overflow-x: hidden;
+  height: 100vh;
+}
+
+.wrapper {
+  display: grid;
+  grid-gap: 20px;
+  width: 91%;
+  margin: 5%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  color: $emphasis-color;
+  font-family: $font-stack-sans-serif;
+}
+
+hr {
+  color: rgb(241, 239, 239);
+}
+
+h1 {
+  font-size: 40px;
+}
+
+section {
+  margin: 3% 0;
+}
+
+.topic {
+  text-align: center;
+  @extend %margin-bottom;
+}
+
+button {
+  height: 40px;
+  width: auto;
+  padding: 5px;
+  color: white;
+  font-weight: 400;
+  background: $third-color;
+  border: 1px solid $lite-emphasis-color;
+}

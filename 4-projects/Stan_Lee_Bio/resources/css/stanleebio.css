@@ -1,0 +1,334 @@
+/*-------------------------------------------------------------------*/
+/*BASIC SETUP*/
+/*-------------------------------------------------------------------*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  color: black;
+  font-family: "Lato", "Arial";
+  font-weight: 300;
+  font-size: 100%;
+  text-rendering: optimizeLegibility;
+  overflow-x: hidden;
+  background: #fde88b;
+  height: 100vh;
+}
+
+@keyframes scale_1 {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 84%;
+  }
+}
+
+@keyframes scale_2 {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes scale_3 {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 68%;
+  }
+}
+
+@keyframes scale_4 {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 76%;
+  }
+}
+
+@keyframes scale_5 {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 84%;
+  }
+}
+
+@keyframes scale_6 {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 60%;
+  }
+}
+
+/*----Heading 1-----*/
+h1 {
+  text-align: center;
+  padding-top: 10px;
+  font-size: 5rem;
+  font-weight: 800;
+  font-style: italic;
+  font-family: "Montserrat Subrayada";
+  color: #f7cb08;
+  background: #441a86;
+}
+
+/*----------Trading Card Section--------*/
+
+.trading_card {
+  height: auto;
+  width: auto;
+  padding: 0 4%;
+  display: flex;
+  background: #ecc828;
+}
+
+.potrait_container {
+  max-height: 600px;
+  max-width: 360px;
+  background: rgba(72, 151, 216, 0.9);
+  color: white;
+  font-family: "Arial";
+  border-radius: 2px;
+  flex: 0 0 30%;
+}
+
+.stan_img1 {
+  height: auto;
+  width: 88%;
+  object-fit: cover;
+  object-position: top left;
+  border-radius: 2px;
+  border: 1px rgb(43, 133, 211) solid;
+  margin: 5%;
+}
+
+blockquote {
+  margin-top: -15px;
+  margin-left: 20px;
+  font-style: italic;
+  width: 89%;
+  letter-spacing: 1.5px;
+  padding-bottom: 10%;
+  font-size: 1.4rem;
+}
+
+.powerrating {
+  padding-top: 20px;
+  background: #ecc828;
+  flex: 1;
+}
+
+.power_grid {
+  display: grid;
+  grid-template-columns: 15% repeat(7, 1fr);
+  font-size: 1.5rem;
+  font-weight: bold;
+  font-family: "IBM Plex Sans";
+  color: white;
+  text-shadow: 1px 1px black;
+  padding-left: 2rem;
+  background: #22248b;
+}
+
+.item {
+  border-right: 2px solid black;
+  height: 550%;
+  text-align: right;
+  padding-right: 5px;
+}
+
+.powerscale {
+  background: rgb(168, 166, 166);
+  padding: 30px 0;
+}
+
+.powerscale li {
+  padding-left: 30px;
+}
+
+.scale {
+  white-space: nowrap;
+}
+
+.scale_1 {
+  background: rgb(238, 238, 50);
+  width: 88%;
+  animation-name: scale_1;
+  animation-duration: 4s;
+}
+
+.scale_2 {
+  background: orange;
+  animation-name: scale_2;
+  animation-duration: 4s;
+}
+.scale_3 {
+  background: rgb(247, 93, 93);
+  width: 67%;
+  animation-name: scale_3;
+  animation-duration: 4s;
+}
+.scale_4 {
+  background: green;
+  width: 79%;
+  animation-name: scale_4;
+  animation-duration: 4s;
+}
+.scale_5 {
+  background: blue;
+  width: 84%;
+  animation-name: scale_5;
+  animation-duration: 4s;
+}
+.scale_6 {
+  background: darkmagenta;
+  width: 49%;
+  animation-name: scale_6;
+  animation-duration: 4s;
+}
+
+.powerscale ul {
+  color: white;
+  font-size: 1.8rem;
+  font-weight: 500;
+  list-style: none;
+  line-height: 1.3;
+  font-family: "Oswald";
+  font-style: italic;
+  letter-spacing: 1px;
+  text-shadow: 1px 1px 0px black;
+}
+
+/*------------Bio Section-----------*/
+
+.bio-container {
+  display: flex;
+}
+
+.stan_img2 {
+  flex: 1 1 20%;
+  max-width: 400px;
+  margin: 1% 3%;
+  border-radius: 2px;
+  float: left;
+}
+
+.brief_bio {
+  margin: 0 50px;
+  font-weight: 400;
+  color: black;
+  font-size: 1.5rem;
+  flex: 1;
+  padding-bottom: 50px;
+}
+
+#unique:first-letter {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+h2 {
+  text-align: center;
+  background: #441a86;
+  color: #f7cb08;
+}
+
+/*--------- Heroes Gallery Section--------- */
+
+.heroes-img {
+  height: 350px;
+  width: 100%;
+}
+
+.gallery-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.portrait_label {
+  background: #441a86;
+  color: white;
+  font-size: 1.4em;
+  padding: 10px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.hero-potrait {
+  background: rgba(66, 25, 132, 0.8);
+  width: 290px;
+  height: auto;
+  padding: 10px;
+  margin: 10px;
+  font-size: 0.94em;
+  font-weight: 400;
+  color: white;
+  line-height: 1.2em;
+}
+
+footer {
+  background: #441a86;
+  height: 100px;
+  margin-top: 30px;
+}
+footer p {
+  text-align: center;
+  padding: 20px;
+  font-weight: 500;
+  color: white;
+  font-size: 1.1em;
+}
+
+@media (max-width: 596px) {
+  h1 {
+    font-size: 3.2rem;
+  }
+  .trading_card {
+    display: grid;
+    grid-template-areas: 
+    "potrait_container"
+    "powerrating";
+  }
+
+  blockquote {
+    font-size: 1.2rem;
+    padding: 5px 20px 5px 5px;
+  }
+
+  .powerscale li {
+    font-size: 1.25rem;
+    padding-left: 0;
+  }
+
+  .power_grid {
+    font-size: 1.15rem;
+    grid-template-columns: 20% repeat(7, 1fr);
+    padding-left: 0;
+  }
+  .brief_bio {
+    padding: 0 20px 0 0px;
+    margin-left: 3%;
+    font-size: 1.3rem;
+    width: 80%;
+  }
+  .stan_img2 {
+    margin-top: 30px;
+  }
+  
+}
+
