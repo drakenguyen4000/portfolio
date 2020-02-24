@@ -3,7 +3,6 @@
   grid-gap: 20px;
   grid-template-columns: repeat(auto-fit, minmax(300px, auto));
   justify-content: space-around;
-  
   .myproject {
     background: $base-color2;
     box-shadow: 1px 1px rgb(236, 236, 236);
@@ -16,7 +15,7 @@
     list-style: none;
     width: 34%;
     padding: 14px;
-    font-size: 1em;
+    font-size: 1.2rem;
     margin: 10px;
     background: rgba(95, 106, 255, 0.95);
     font-family: $font-stack-sans-serif;
@@ -24,13 +23,12 @@
     font-weight: 600;
     border-radius: 1px;
   }
-
   h4 {
     display: flex;
     align-items: center;
     justify-content: center;
     font-family: "Muli";
-    font-size: 1.3em;
+    font-size: 1.7rem;
     font-weight: 10;
     background: $secondary-color;
     width: 100%;
@@ -41,6 +39,6 @@
 
 button {
   display: block;
-  font-size: 100%;
+  font-size: 1.2rem;
   margin: 30px auto;
 }

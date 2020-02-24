@@ -10,10 +10,17 @@ body {
   color: $base-font-color;
   font-family: $font-stack-serif;
   font-weight: $font-weight-standard;
-  font-size: 20px;
+  font-size: 100%;
   text-rendering: optimizeLegibility;
   overflow-x: hidden;
   height: 100vh;
+  a:hover {
+    text-decoration: none;
+    color: white;
+    transition: all 0.4s ease-in-out;
+    background: #3276f5;
+    font-weight: bold;
+  }
 }
 
 .wrapper {
@@ -21,6 +28,7 @@ body {
   grid-gap: 20px;
   width: 91%;
   margin: 5%;
+  font-size: 1.2rem;
 }
 
 h1,
@@ -37,7 +45,7 @@ hr {
 }
 
 h1 {
-  font-size: 40px;
+  font-size: 2.5rem;
 }
 
 section {
@@ -49,6 +57,10 @@ section {
   @extend %margin-bottom;
 }
 
+p {
+  text-align: justify;
+}
+
 button {
   height: 40px;
   width: auto;
@@ -56,5 +68,14 @@ button {
   color: white;
   font-weight: 400;
   background: $third-color;
-  border: 1px solid $lite-emphasis-color;
+  border: none;
+  a:hover {
+    font-size: 1.3rem;
+    font-weight: normal;
+    background: #5a92fc;
+  }
+}
+
+button:hover {
+  background: #5a92fc;
 }

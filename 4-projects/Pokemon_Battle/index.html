@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css?family=Bungee+Inline|Bungee+Shade|Titan+One|Roboto|Lato&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+        integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link type="text/css" rel="stylesheet" href="vendors/css/animate.css">
+    <link type="text/css" rel="stylesheet" href="resources/css/style.css">
+
+    <title>Pokemon Battle</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="vendors/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="vendors/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="vendors/icons/favicon-16x16.png">
+    <link rel="manifest" href="vendors/icons/site.webmanifest">
+</head>
+
+<body>
+    <div class="wrapper clearfix">
+        <h1 class="title">Pokemon Battle</h1>
+        <div class="player-0-panel active">
+            <div class="name-panel blastoise-panel">
+                <div class="player-name" id="name-0">Blastoise</div>
+                <h3 id="health-title">HP</h3>
+                <div class="health-bar-0">
+                    <div class="health-bar-0-value">100%</div>
+                    <div class="health-bar-0-fill"></div>
+                </div>
+            </div>
+            <img class="pm-img blastoise" id="standard-img-0" src="resources/img/blastoise-attack.jpg">
+            <img class="pm-img blastoise" id="winner-img-0" src="resources/img/blastoise.jpg">
+            <div class="player-energy-box blastoise-box">
+                <div class="player-energy-score" id="energy-0">0</div>
+                <div class="player-energy-label">Energy</div>
+            </div>
+        </div>
+
+        <div class="player-1-panel">
+            <div class="name-panel charizard-panel">
+                <div class="player-name" id="name-1">Charizard</div>
+                <h3 class="health-title">HP</h3>
+                <div class="health-bar-1">
+                    <div class="health-bar-1-value">100%</div>
+                    <div class="health-bar-1-fill"></div>
+                </div>
+            </div>
+            <img class="pm-img charizard" id="standard-img-1" src="resources/img/charizard-attack.jpg">
+            <img class="pm-img charizard" id="winner-img-1" src="resources/img/charizard.jpg">
+            <div class="player-energy-box charizard-box">
+                <div class="player-energy-score" id="energy-1">0</div>
+                <div class="player-energy-label">Energy</div>
+            </div>
+        </div>
+
+        <button class="btn btn-start"><i class="fas fa-play"></i>Start Battle</button>
+        <button class="btn btn-stop"><i class="fas fa-stop"></i>End Battle</button>
+        <button class="btn btn-charge"><i class="fas fa-bolt"></i>Charge</button>
+        <button class="btn btn-attack"><i class="fas fa-certificate"></i>Attack</button>
+        <button class="btn btn-info"><i class="fas fa-question"></i>Instructions</button>
+        <button class="btn btn-credits"><i class="fas fa-book"></i>Credits</button>
+
+        <img src="resources/img/charge-1.png" alt="charge" class="charge" id="charge-1">
+        <img src="resources/img/pokeball.png" alt="pokeball" class="pokeball" id="pokeball">
+
+        <footer>&copy; Designed by Drake
+            Nguyen 2020</footer>
+
+        <div class="info-panels gameRules">
+            <button class="btn-exit-inst">x</button>
+            <h1>Game Rules</h1>
+            <ul>
+                <li>Each player starts with full health and no energy charges.</li>
+                <li>The active player will charge his Pokemon's energy with each click of the charge button.</li>
+                <li>Charges 1, 7, and 12 are bust charges. Active player will lose turn and all energy
+                    charges for that round.</li>
+                <li>Hit attack button to unleash your Pokemon's energy at your opponent's monster.</li>
+                <li>Reduce their Pokemon's health meter to zero to become the Pokemon Champion!</li>
+            </ul>
+        </div>
+
+        <div class="info-panels credits">
+            <button class="btn-exit-cred">x</button>
+            <h1>Credits</h1>
+            <ul>
+                <li>Pokémon images & names © 1995-2020 Nintendo/Game Freak.</li>
+                <li>UI Confirmation Alert, C2.wav" by InspectorJ (www.jshaw.co.uk) of Freesound.org</li>
+                <li>UI Confirmation Alert, game-over-arcade.wav by myfox14 of Freesound.org</li>
+                <li>UI Confirmation Alert, 8-bit-game-over.wav by euphrosyyn of Freesound.org</li>
+                <li>UI Confirmation Alert, loop-run-for-your-life-04.wav by littlerobotsoundfactory of
+                    Freesound.org
+                </li>
+                <li>UI Confirmation Alert, coins-1.wav by projectsu012 of Freesound.org</li>
+                <li>UI Confirmation Alert, win-video-game-sound.wav by 0ev of Freesound.org</li>
+                <li>UI Confirmation Alert, large-monster-grunt-hit-01.wav" by michael-klier of Freesound.org"</li>
+            </ul>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="resources/js/mypokemon.js"></script>
+</body>
+
+</html>

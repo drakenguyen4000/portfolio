@@ -1,0 +1,148 @@
+:root {
+  --black-color: #141414;
+  --brown-color: #d19653;
+}
+
+html,
+body {
+  background: white;
+  color: #141414;
+  font-family: "Cardo";
+  font-size: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Muli", "Lato";
+  color: var(--brown-color);
+}
+
+/*-------------nav bar------------------*/
+
+#mainnavbar {
+  font-size: 2rem;
+  font-weight: 300;
+  font-family: "Muli";
+}
+
+#mainnavbar .nav-link {
+  color: #ffffff;
+}
+
+#mainnavbar .nav-link:hover {
+  color: var(--brown-color);
+}
+
+#mainnavbar .navbar-brand {
+  font-size: 2.2rem;
+  font-weight: 300;
+}
+
+.navbar.scrolled {
+  background: rgba(0, 0, 0, 0.8);
+  -webkit-transition: background 800ms;
+  transition: background 800ms;
+}
+
+/*---------------header------------------*/
+
+.header {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))),
+    url("../img/coffeecups.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("../img/coffeecups.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; /*Parallax scrolling effect*/
+  height: 100vh;
+  color: white;
+}
+
+#main-title {
+  font-size: 3rem;
+}
+
+.main-summary {
+  font-size: 1.5rem;
+  margin-top: 0px;
+}
+
+/*---------------about us------------------*/
+
+.icons {
+  font-size: 3.5rem;
+  text-align: center;
+  display: block;
+}
+
+.ingredients h3 {
+  font-size: 1.8rem;
+  text-align: center;
+}
+.ingredients p {
+  font-size: 1.4rem;
+}
+
+/*-------menu-------*/
+
+#brandblock span {
+  color: #634422;
+}
+
+#brandblock h1 {
+  font-weight: 100;
+  font-size: 3.4rem;
+  white-space: nowrap;
+
+}
+
+.description h3,
+.description h4 {
+  font-weight: 500;
+  font-size: 1.7rem;
+}
+
+.description p {
+  font-size: 1.3rem;
+}
+
+/*---------footer--------*/
+
+footer {
+  background: #f3f1f1;
+  padding: 30px 30px 20px 30px;
+  text-align: center;
+}
+
+footer h5 {
+  color: var(--black-color);
+  font-size: 1.2em;
+  font-weight: 500;
+}
+
+/*----resolution sizes------*/
+
+@media (max-width: 767px) {
+  .navbar-brand {
+    display: none;
+  }
+  #main-title {
+    margin: 70px 0 0 0;
+    font-size: 2.8rem;
+  }
+  .description .main-summary {
+    font-size: 1.5rem;
+    margin-top: 0px;
+  }
+}
+
+/* / Didn't go lower because around 700 d-none kicks and hides our element.   */
+@media (max-width: 1200px) {
+  #brandblock h1 {
+    font-weight: 100;
+    font-size: 3rem;
+  }
+}

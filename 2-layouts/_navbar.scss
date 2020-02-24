@@ -14,11 +14,11 @@
     }
     .social-media {
       float: left;
-      font-size: 150%;
+      font-size: 1.8rem;
     }
     .navigations {
       float: right;
-      font-size: 90%;
+      font-size: 1.1rem;
     }
   }
   
@@ -36,8 +36,9 @@
     .nav {
       padding: 1% 0.2%;
       display: grid;
-      grid-template-areas: "social-media
-      navigations";
+      grid-template-areas: 
+      "social-media"
+      "navigations";
     }
     .social-media {
       text-align: center;

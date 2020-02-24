@@ -12,14 +12,24 @@
 
 html,
 body {
-  background-color: #F5F6F7;
+  background-color: #f7f7f8;
   color: #313131;
   font-family: "Cardo", "Vollkorn", "Merriweather", "serif";
   font-weight: 300;
-  font-size: 20px;
+  font-size: 100%;
   text-rendering: optimizeLegibility;
   overflow-x: hidden;
   height: 100vh;
+}
+
+html a:hover,
+body a:hover {
+  text-decoration: none;
+  color: white;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  background: #3276f5;
+  font-weight: bold;
 }
 
 .wrapper {
@@ -28,6 +38,7 @@ body {
   grid-gap: 20px;
   width: 91%;
   margin: 5%;
+  font-size: 1.2rem;
 }
 
 h1,
@@ -44,7 +55,7 @@ hr {
 }
 
 h1 {
-  font-size: 40px;
+  font-size: 2.5rem;
 }
 
 section {
@@ -55,6 +66,10 @@ section {
   text-align: center;
 }
 
+p {
+  text-align: justify;
+}
+
 button {
   height: 40px;
   width: auto;
@@ -62,16 +77,33 @@ button {
   color: white;
   font-weight: 400;
   background: #347afd;
-  border: 1px solid #747474;
+  border: none;
+}
+
+button a:hover {
+  font-size: 1.3rem;
+  font-weight: normal;
+  background: #5a92fc;
+}
+
+button:hover {
+  background: #5a92fc;
 }
 
 header {
   width: 100%;
-  height: 60vh;
+  height: 450px;
+  line-height: 1.2;
+  letter-spacing: 1px;
+}
+
+header .background-img {
+  width: 100%;
+  height: 100%;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url("5-img/alex-wong-unsplash.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("5-img/alex-wong-unsplash.jpg");
   background-size: cover;
   background-position: center;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("5-img/alex-wong-unsplash.jpg");
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("5-img/alex-wong-unsplash.jpg");
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -83,6 +115,7 @@ header {
           align-items: center;
   line-height: 1.2;
   letter-spacing: 1px;
+  text-align: center;
 }
 
 header h1 {
@@ -92,10 +125,22 @@ header h1 {
 }
 
 header h3 {
-  text-align: center;
   color: white;
   font-size: 1.7rem;
   font-weight: 800;
+}
+
+@media only screen and (max-width: 500px) {
+  header .background-img {
+    width: 100%;
+    height: 80%;
+  }
+  header h1 {
+    font-size: 1.8rem;
+  }
+  header h3 {
+    font-size: 1rem;
+  }
 }
 
 footer {
@@ -108,12 +153,18 @@ footer {
 footer h5 {
   margin-bottom: 10px;
   color: white;
-  font-size: 18px;
+  font-size: 1.1rem;
   font-weight: 500;
 }
 
 footer .webicons img {
   width: 40px;
+}
+
+#contact-footer {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
 }
 
 .nav {
@@ -135,12 +186,12 @@ footer .webicons img {
 
 .nav .social-media {
   float: left;
-  font-size: 150%;
+  font-size: 1.8rem;
 }
 
 .nav .navigations {
   float: right;
-  font-size: 90%;
+  font-size: 1.1rem;
 }
 
 a:link, a:visited {
@@ -158,7 +209,7 @@ a:hover {
     padding: 1% 0.2%;
     display: -ms-grid;
     display: grid;
-        grid-template-areas: "social-media navigations";
+        grid-template-areas: "social-media" "navigations";
   }
   .social-media {
     text-align: center;
@@ -199,8 +250,8 @@ a:hover {
   display: -ms-grid;
   display: grid;
   grid-gap: 25px;
-  -ms-grid-columns: (minmax(300px, 360px))[auto-fill];
-      grid-template-columns: repeat(auto-fill, minmax(300px, 360px));
+  -ms-grid-columns: (minmax(250px, 360px))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(250px, 360px));
   -ms-flex-pack: distribute;
       justify-content: space-around;
   margin-left: 6px;
@@ -209,14 +260,16 @@ a:hover {
 .skills h3 {
   text-align: center;
   font-family: "Muli";
-  font-size: 30px;
+  font-size: 1.8rem;
   font-weight: 10;
   background: #4484fa;
-  width: 128%;
   height: 60px;
   padding-top: 15px;
-  margin: 0px 0 0 -39px;
   color: white;
+}
+
+.skills div {
+  background: white;
 }
 
 .skills ul {
@@ -237,14 +290,13 @@ a:hover {
 .skills ul li::before {
   color: #6a9bf5;
   margin-right: 10px;
-  content: '✓';
+  content: "✓";
 }
 
 .img-icons {
-  width: 128%;
+  width: 100%;
   height: auto;
-  margin: 0px 0 30px -39px;
-  opacity: .92;
+  opacity: 0.92;
 }
 
 .projects {
@@ -272,7 +324,7 @@ a:hover {
   list-style: none;
   width: 34%;
   padding: 14px;
-  font-size: 1em;
+  font-size: 1.2rem;
   margin: 10px;
   background: rgba(95, 106, 255, 0.95);
   font-family: "Raleway", "Muli", "Lato", "sans-serif";
@@ -292,7 +344,7 @@ a:hover {
       -ms-flex-pack: center;
           justify-content: center;
   font-family: "Muli";
-  font-size: 1.3em;
+  font-size: 1.7rem;
   font-weight: 10;
   background: #4484fa;
   width: 100%;
@@ -302,7 +354,7 @@ a:hover {
 
 button {
   display: block;
-  font-size: 100%;
+  font-size: 1.2rem;
   margin: 30px auto;
 }
 

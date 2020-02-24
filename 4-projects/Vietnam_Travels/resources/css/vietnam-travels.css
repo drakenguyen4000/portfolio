@@ -1,0 +1,265 @@
+/*-------------------------------------------------------------------*/
+/*BASIC SETUP*/
+/*-------------------------------------------------------------------*/
+
+:root {
+  --color-gold: #fcd31e;
+  --color-white: white;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  background: #17a2b8;
+  color: white;
+  font-family: "Open Sans", "Roboto", "Lato", "Arial", sans-serif;
+  font-size: 100%;
+  font-weight: 300;
+  overflow-x: hidden;
+  text-rendering: optimizeLegibility;
+}
+
+.topic {
+  color: #ffbf00;
+  font-size: 2.5rem;
+  margin-top: 10px;
+  padding: 20px 0px;
+  text-shadow: 1px 0px #bf9b30;
+}
+
+section span {
+  display: block;
+  margin-top: -10px;
+  padding-bottom: 10px;
+}
+
+/*======== navigation bar ========*/
+
+.navbar {
+  background-color: rgba(245, 185, 4, 0.9);
+  box-shadow: 0 2px 2px rgb(226, 170, 3);
+  color: var(--color-white);
+}
+
+.navbar a {
+  font-size: 1.4rem;
+  font-family: "Roboto", "Lato";
+  font-weight: 300;
+}
+
+/* ======== Jumbotron ======== */
+
+.jumbotron {
+  background-image: url(../img/girl-onboat-splash.jpg);
+  background-size: cover;
+  background-position: center;
+  font-family: "Roboto";
+  margin: 65px 0 0 0;
+}
+
+.jumbotron h1 {
+  font-weight: 400;
+  padding: 0 10% 10% 10%;
+  text-shadow: 4px 2px 1px rgb(24, 23, 23);
+}
+
+/*----------History---------*/
+
+.history {
+  width: 90%;
+  font-size: 1.3rem;
+}
+
+.history > div > h3 {
+  color: var(--color-gold);
+}
+
+.learn-more {
+  background: var(--color-gold);
+  color: var(--color-white);
+  font-weight: 500;
+  text-shadow: 1px 1px rgb(172, 172, 172);
+}
+
+/* =====Tour Card====== */
+
+.card-section {
+  background: var(--color-white);
+  min-width: 340px;
+  padding-bottom: 20px;
+}
+
+.card-img-top {
+  height: 250px;
+}
+
+.card-body {
+  background: rgba(249, 249, 249, 0.5);
+  color: rgb(8, 7, 7);
+}
+
+/* ======== food section ======== */
+
+.img-thumbnail {
+  margin-bottom: 30px;
+}
+
+.tour-card {
+  color: green;
+}
+
+/* ======== Contact Form ========= */
+
+.contact-form {
+  background: var(--color-white);
+  color: rgb(118, 118, 252);
+  padding-bottom: 20px;
+}
+
+/* ==========Our Tours Page========== */
+
+.toursection {
+  margin-top: 100px;
+}
+
+.carousel {
+  max-height: 480px;
+  max-width: 720px;
+}
+
+.tour-postit-body {
+  background: rgba(249, 249, 249, 0.9);
+  border-radius: 5px;
+  color: rgb(94, 84, 84);
+  font-size: 1rem;
+  font-family: "lato";
+}
+
+.tour-text {
+  height: 100px;
+}
+
+.tour-title {
+  color: rgb(13, 173, 157);
+}
+
+.tour-subtitle {
+  background: var(--color-gold);
+  border-radius: 1px;
+  box-shadow: 1px 1px rgb(207, 206, 206);
+  color: var(--color-white);
+  font-family: "roboto";
+  font-size: 1.4rem;
+  font-weight: 400;
+  padding: 10px;
+  text-shadow: 1px 1px rgb(190, 190, 190);
+}
+
+#thankyou-footer {
+  margin-top: 10%;
+}
+
+footer {
+  font-weight: 300;
+}
+
+.social-links li {
+  display: inline;
+  font-size: 1.8rem;
+  list-style: none;
+  margin-left: 20px;
+}
+
+/*----animation----*/
+
+.js--wp-1,
+.js--wp-2,
+.js--wp-3,
+.js--wp-4,
+.js--wp-5,
+.js--wp-6,
+.js--wp-7 {
+  opacity: 0;
+}
+
+.js--wp-1.animated,
+.js--wp-6.animated,
+.js--wp-7.animated {
+  opacity: 1;
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
+}
+
+.js--wp-2.animated,
+.js--wp-5.animated {
+  opacity: 1;
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s;
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
+}
+
+.js--wp-3.animated,
+.js--wp-4.animated {
+  opacity: 1;
+  -webkit-animation-delay: 2s;
+  animation-delay: 2s;
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
+}
+
+/*===================Responsive Sizes==========================*/
+
+@media only screen and (max-width: 900px) {
+  .jumbotron h1 {
+    font-size: 2.9rem;
+    margin-top: -40px;
+    margin-left: -40px;
+  }
+
+  .thank-you {
+    font-size: 2rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .jumbotron {
+    margin-top: 58px;
+  }
+  .jumbotron h1 {
+    font-size: 1.9rem;
+    padding-top: 10px;
+    padding-left: 50px;
+  }
+
+  .topic,
+  .history > div > h3 {
+    font-size: 2rem;
+    text-align: left;
+  }
+
+  .topic,
+  .history > div > p {
+    text-align: left;
+  }
+
+  .history {
+    font-size: 1.2rem;
+  }
+
+  .tour-header {
+    font-size: 2rem;
+  }
+
+  .thank-you {
+    font-size: 1.5rem;
+  }
+  #thankyousection {
+    height: 100vh;
+  }
+}

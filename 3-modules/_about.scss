@@ -1,0 +1,70 @@
+.bio {
+  font-family: $font-stack-serif;
+  background: white;
+  border-radius: 2px;
+  margin-top: 80px;
+  padding: 4% 8%;
+  h1 {
+    @extend %margin-bottom;
+  }
+}
+
+.development {
+  background: white;
+  padding: 4% 8%;
+  margin-bottom: 4%;
+  border-radius: 2px;
+  h4 {
+    color: $secondary-color;
+    text-align: center;
+  }
+  p {
+    @extend %margin-bottom;
+  }
+}
+
+.skills {
+  font-family: "Arial";
+  display: grid;
+  grid-gap: 25px;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 360px));
+  justify-content: space-around;
+  margin-left: 6px;
+  h3 {
+    text-align: center;
+    font-family: "Muli";
+    font-size: 1.8rem;
+    font-weight: 10;
+    background: $secondary-color;
+    height: 60px;
+    padding-top: 15px;
+    color: white;
+  }
+  div {
+    background: white;
+  }
+  ul {
+    list-style: none;
+    background: $base-color2;
+    padding: 0 40px 40px 40px;
+    border-radius: 2px;
+    li {
+      padding: 1px;
+      list-style-position: inside;
+      padding: 10px 0 10px 20px;
+      text-indent: -1.3em;
+      border-bottom: 1px solid rgb(219, 219, 219);
+    }
+    li::before {
+      color: $main-color;
+      margin-right: 10px;
+      content: "✓";
+    }
+  }
+}
+
+.img-icons {
+  width: 100%;
+  height: auto;
+  opacity: 0.92;
+}
