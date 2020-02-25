@@ -245,7 +245,7 @@ i {
   left: 100%;
   background: red;
   color: #dddddd;
-  width: 3%;
+  width: 25px;
   height: 25px;
 }
 
@@ -478,7 +478,7 @@ footer {
   }
 
   .info-panels {
-    font-size: 0.85rem;
+    font-size: 0.8rem;
   }
 
   .btn-credits {
@@ -539,7 +539,7 @@ footer {
 
   .info-panels {
     top: 6%;
-    font-size: 0.75rem;
+    font-size: 0.7rem;
   }
 
   .pm-img {
