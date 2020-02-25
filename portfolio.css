@@ -245,6 +245,15 @@ a:hover {
   text-align: center;
 }
 
+.development #download-link {
+  color: #347afd;
+}
+
+.development #download-link:hover {
+  color: white;
+  background: #3276f5;
+}
+
 .skills {
   font-family: "Arial";
   display: -ms-grid;
