@@ -21,6 +21,13 @@
   p {
     @extend %margin-bottom;
   }
+  #download-link {
+    color: $third-color;
+  }
+  #download-link:hover {
+    color: white;
+    background: #3276f5;
+  }
 }
 
 .skills {
