@@ -1,26 +1,26 @@
 //variables
-var p0Health, p1Health, chargeEnergy, activePlayer, gamePlaying;
+let p0Health, p1Health, chargeEnergy, activePlayer, gamePlaying;
 
 //element selector variables
-var startGame = document.querySelector(".btn-start");
-var instructionsBtn = document.querySelector(".btn-info");
-var gameRules = document.querySelector(".gameRules");
-var exitInstBtn = document.querySelector(".btn-exit-inst");
-var exitCredBtn = document.querySelector(".btn-exit-cred");
-var chargeBtn = document.querySelector(".btn-charge");
-var charge = document.getElementById("charge-1");
-var pokeball = document.getElementById("pokeball");
-var attackBtn = document.querySelector(".btn-attack");
-var p0Energy = document.getElementById("energy-0");
-var p1Energy = document.getElementById("energy-1");
-var p0Panel = document.querySelector(".player-0-panel");
-var p1Panel = document.querySelector(".player-1-panel");
-var p0Name = document.getElementById("name-0");
-var p1Name = document.getElementById("name-1");
-var winnerimg0 = document.getElementById("winner-img-0");
-var winnerimg1 = document.getElementById("winner-img-1");
-var creditsBtn = document.querySelector(".btn-credits");
-var credits = document.querySelector(".credits");
+const startGame = document.querySelector(".btn-start");
+const instructionsBtn = document.querySelector(".btn-info");
+const gameRules = document.querySelector(".gameRules");
+const exitInstBtn = document.querySelector(".btn-exit-inst");
+const exitCredBtn = document.querySelector(".btn-exit-cred");
+const chargeBtn = document.querySelector(".btn-charge");
+const charge = document.getElementById("charge-1");
+const pokeball = document.getElementById("pokeball");
+const attackBtn = document.querySelector(".btn-attack");
+const p0Energy = document.getElementById("energy-0");
+const p1Energy = document.getElementById("energy-1");
+const p0Panel = document.querySelector(".player-0-panel");
+const p1Panel = document.querySelector(".player-1-panel");
+const p0Name = document.getElementById("name-0");
+const p1Name = document.getElementById("name-1");
+const winnerimg0 = document.getElementById("winner-img-0");
+const winnerimg1 = document.getElementById("winner-img-1");
+const creditsBtn = document.querySelector(".btn-credits");
+const credits = document.querySelector(".credits");
 
 soundBox = {
   charging: new Audio("vendors/sounds/coins-1.wav"),
@@ -33,37 +33,37 @@ soundBox = {
 };
 
 //new game
-startGame.addEventListener("click", function() {
+startGame.addEventListener("click", () => {
   init();
 });
 
 //stop game
-document.querySelector(".btn-stop").addEventListener("click", function() {
+document.querySelector(".btn-stop").addEventListener("click", () => {
   endBattle();
 });
 
 //Game Guide on and off
-instructionsBtn.addEventListener("click", function() {
+instructionsBtn.addEventListener("click", () => {
   gameRules.style.visibility = "visible";
 });
 
-exitInstBtn.addEventListener("click", function() {
+exitInstBtn.addEventListener("click", () => {
   gameRules.style.visibility = "hidden";
 });
 
 //credits on and off
-creditsBtn.addEventListener("click", function() {
+creditsBtn.addEventListener("click", () => {
   credits.style.visibility = "visible";
 });
 
-exitCredBtn.addEventListener("click", function() {
+exitCredBtn.addEventListener("click", () => {
   credits.style.visibility = "hidden";
 });
 
 //Charge
-chargeBtn.addEventListener("click", function() {
+chargeBtn.addEventListener("click", () => {
   if (gamePlaying === true) {
-    var chargeNum = Math.floor(Math.random() * 12 + 1);
+    let chargeNum = Math.floor(Math.random() * 12 + 1);
     if (chargeNum !== 12 && chargeNum !== 7 && chargeNum !== 1) {
       pokeball.classList.add("damage");
       charge.classList.add("rotate");
@@ -95,7 +95,7 @@ chargeBtn.addEventListener("click", function() {
 });
 
 //Attack
-attackBtn.addEventListener("click", function() {
+attackBtn.addEventListener("click", () => {
   if (gamePlaying === true && chargeEnergy > 0) {
     //Player 1?
     if (activePlayer === 0) {
@@ -163,7 +163,7 @@ attackBtn.addEventListener("click", function() {
   }
 });
 
-function nextPlayer() {
+nextPlayer = () => {
   if (gamePlaying === true) {
     activePlayer === 0 ? (activePlayer = 1) : (activePlayer = 0);
     chargeEnergy = 0;
@@ -237,10 +237,10 @@ class HealthBar1 {
 }
 
 //Instance
-var pb0Health = new HealthBar0(document.querySelector("health-bar-0"), 100);
-var pb1Health = new HealthBar1(document.querySelector("health-bar-1"), 100);
+let pb0Health = new HealthBar0(document.querySelector("health-bar-0"), 100);
+let pb1Health = new HealthBar1(document.querySelector("health-bar-1"), 100);
 
-function init() {
+init = () => {
   soundBox.newBattle.play();
   soundBox.gameMusic.play();
   soundBox.gameMusic.volume = 0.1;
@@ -267,7 +267,7 @@ function init() {
   pb1Health.setValue(p1Health);
 }
 
-function endBattle() {
+endBattle = () => {
   soundBox.gameMusic.pause();
   p0Health = 100;
   p1Health = 100;
