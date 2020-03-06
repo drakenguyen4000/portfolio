@@ -75,3 +75,9 @@
   height: auto;
   opacity: 0.92;
 }
+
+@media only screen and (max-width: 500px) {
+  .bio {
+    margin-top: 0px;
+  }
+}

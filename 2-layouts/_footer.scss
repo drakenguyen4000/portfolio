@@ -19,3 +19,12 @@ footer {
   width: 100%;
   bottom: 0;
 }
+
+@media only screen and (max-width: 500px) {
+  footer h5 {
+    font-size: .9rem;
+  }
+  footer .webicons img {
+    width: 34px;
+  }
+}

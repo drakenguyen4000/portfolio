@@ -167,6 +167,15 @@ footer .webicons img {
   bottom: 0;
 }
 
+@media only screen and (max-width: 500px) {
+  footer h5 {
+    font-size: .9rem;
+  }
+  footer .webicons img {
+    width: 34px;
+  }
+}
+
 .nav {
   padding: 1% 5%;
   position: fixed;
@@ -308,6 +317,12 @@ a:hover {
   opacity: 0.92;
 }
 
+@media only screen and (max-width: 500px) {
+  .bio {
+    margin-top: 0px;
+  }
+}
+
 .projects {
   display: -ms-grid;
   display: grid;
@@ -365,6 +380,15 @@ button {
   display: block;
   font-size: 1.2rem;
   margin: 30px auto;
+}
+
+@media only screen and (max-width: 500px) {
+  p {
+    text-align: left;
+  }
+  .projects .myproject li {
+    font-size: 1rem;
+  }
 }
 
 .contact-page {
