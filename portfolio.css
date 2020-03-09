@@ -169,10 +169,15 @@ footer .webicons img {
 
 @media only screen and (max-width: 500px) {
   footer h5 {
-    font-size: .9rem;
+    font-size: 0.9rem;
   }
   footer .webicons img {
     width: 34px;
+  }
+  footer #contact-footer {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
   }
 }
 
@@ -400,13 +405,6 @@ button {
 }
 
 .contact-page .contact-button {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 30px 50px;
   margin-top: 130px;
 }
 /*# sourceMappingURL=portfolio.css.map */
