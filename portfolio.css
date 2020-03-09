@@ -167,20 +167,6 @@ footer .webicons img {
   bottom: 0;
 }
 
-@media only screen and (max-width: 500px) {
-  footer h5 {
-    font-size: 0.9rem;
-  }
-  footer .webicons img {
-    width: 34px;
-  }
-  footer #contact-footer {
-    position: absolute;
-    width: 100%;
-    bottom: 0;
-  }
-}
-
 .nav {
   padding: 1% 5%;
   position: fixed;
@@ -322,12 +308,6 @@ a:hover {
   opacity: 0.92;
 }
 
-@media only screen and (max-width: 500px) {
-  .bio {
-    margin-top: 0px;
-  }
-}
-
 .projects {
   display: -ms-grid;
   display: grid;
@@ -387,15 +367,6 @@ button {
   margin: 30px auto;
 }
 
-@media only screen and (max-width: 500px) {
-  p {
-    text-align: left;
-  }
-  .projects .myproject li {
-    font-size: 1rem;
-  }
-}
-
 .contact-page {
   margin-top: 80px;
   background: white;
@@ -405,6 +376,13 @@ button {
 }
 
 .contact-page .contact-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 30px 50px;
   margin-top: 130px;
 }
 /*# sourceMappingURL=portfolio.css.map */
