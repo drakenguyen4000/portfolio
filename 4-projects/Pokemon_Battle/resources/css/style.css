@@ -137,6 +137,16 @@ body {
   font-size: 2rem;
 }
 
+#footer-link  {
+  color: rgb(0, 68, 255);
+  text-decoration: none;
+}
+
+#footer-link:hover {
+  font-size: 1.15rem;
+  text-decoration: underline;
+}
+
 /*----Buttons----*/
 button {
   position: absolute;

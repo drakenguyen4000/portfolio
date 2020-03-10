@@ -47,6 +47,15 @@ h5 {
   transition: background 800ms;
 }
 
+#footer-link {
+  text-decoration: none;
+}
+
+#footer-link:hover {
+  font-size: 1.25rem;
+  text-decoration: underline;
+}
+
 /*---------------header------------------*/
 
 .header {

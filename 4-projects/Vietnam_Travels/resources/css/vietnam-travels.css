@@ -38,11 +38,22 @@ section span {
   padding-bottom: 10px;
 }
 
+#footer-link {
+  color: #e2aa03;
+  text-decoration: none;
+}
+
+#footer-link:hover {
+  font-size: 1.3rem;
+  color: #e2aa03;
+  text-decoration: underline;
+}
+
 /*======== navigation bar ========*/
 
 .navbar {
   background-color: rgba(245, 185, 4, 0.9);
-  box-shadow: 0 2px 2px rgb(226, 170, 3);
+  box-shadow: 0 2px 2px #e2aa03;
   color: var(--color-white);
 }
 

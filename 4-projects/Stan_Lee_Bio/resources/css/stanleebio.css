@@ -19,6 +19,16 @@ body {
   height: 100vh;
 }
 
+a {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  font-size: 1.15rem;
+  background: #690769;
+}
+
 @keyframes scale_1 {
   from {
     width: 0%;
