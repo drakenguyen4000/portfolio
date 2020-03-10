@@ -1,28 +1,16 @@
-html {
-  height: 100%;
-  #body-contact {
+.contact-page {
+  margin-top: 80px;
+  background: white;
+  padding: 4% 8%;
+  border: 1px solid $base-color2;
+  border-radius: 2px;
+  .contact-button {
     display: flex;
-    flex-direction: column;
-    height: 100%;
-    .contact-page {
-      margin-top: 80px;
-      background: white;
-      padding: 4% 8%;
-      border: 1px solid $base-color2;
-      border-radius: 2px;
-      .contact-button {
-        display: flex;
-        align-items: center;
-        padding: 30px 50px;
-        margin-top: 130px;
-      }
-    }
+    align-items: center;
+    margin-top: 130px;
   }
+}
 
-  #contact-footer {
-    // position: absolute;
-    // width: 100%;
-    // bottom: 0;
-    margin-top: auto;
-  }
+#contact-footer {
+  margin-top: auto;
 }

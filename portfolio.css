@@ -19,7 +19,14 @@ body {
   font-size: 100%;
   text-rendering: optimizeLegibility;
   overflow-x: hidden;
-  height: 100vh;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 html a:hover,
@@ -224,7 +231,6 @@ a:hover {
   .navigations {
     text-align: center;
     padding: 0.5% 0;
-    padding-bottom: 10px;
   }
 }
 
@@ -312,7 +318,7 @@ a:hover {
 }
 
 @media only screen and (max-width: 500px) {
-  .bio {
+  #about-bio {
     margin-top: 0px;
   }
 }
@@ -385,22 +391,7 @@ button {
   }
 }
 
-html {
-  height: 100%;
-}
-
-html #body-contact {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  height: 100%;
-}
-
-html #body-contact .contact-page {
+.contact-page {
   margin-top: 80px;
   background: white;
   padding: 4% 8%;
@@ -408,18 +399,17 @@ html #body-contact .contact-page {
   border-radius: 2px;
 }
 
-html #body-contact .contact-page .contact-button {
+.contact-page .contact-button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 30px 50px;
   margin-top: 130px;
 }
 
-html #contact-footer {
+#contact-footer {
   margin-top: auto;
 }
 /*# sourceMappingURL=portfolio.css.map */
