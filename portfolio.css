@@ -385,7 +385,22 @@ button {
   }
 }
 
-#contactsection .contact-page {
+html {
+  height: 100%;
+}
+
+html #body-contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+}
+
+html #body-contact .contact-page {
   margin-top: 80px;
   background: white;
   padding: 4% 8%;
@@ -393,25 +408,18 @@ button {
   border-radius: 2px;
 }
 
-#contactsection .contact-page .contact-button {
+html #body-contact .contact-page .contact-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 30px 50px;
   margin-top: 130px;
 }
 
-#contact-footer {
-  position: absolute;
-  width: 100%;
-  bottom: 0;
-}
-
-@media only screen and (max-width: 900px) {
-  .contact-page {
-    margin-bottom: 280px;
-  }
-}
-
-@media only screen and (max-width: 570px) {
-  #contactsection .contact-page .contact-button {
-    margin-top: 50px;
-  }
+html #contact-footer {
+  margin-top: auto;
 }
 /*# sourceMappingURL=portfolio.css.map */
