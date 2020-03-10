@@ -385,7 +385,7 @@ button {
   }
 }
 
-.contact-page {
+#contactsection .contact-page {
   margin-top: 80px;
   background: white;
   padding: 4% 8%;
@@ -393,14 +393,8 @@ button {
   border-radius: 2px;
 }
 
-.contact-page .contact-button {
+#contactsection .contact-page .contact-button {
   margin-top: 130px;
-}
-
-@media only screen and (max-width: 900px) {
-  .contact-page {
-    margin-bottom: 280px;
-  }
 }
 
 #contact-footer {
@@ -409,8 +403,14 @@ button {
   bottom: 0;
 }
 
+@media only screen and (max-width: 900px) {
+  .contact-page {
+    margin-bottom: 280px;
+  }
+}
+
 @media only screen and (max-width: 570px) {
-  .contact-page .contact-button {
+  #contactsection .contact-page .contact-button {
     margin-top: 50px;
   }
 }
