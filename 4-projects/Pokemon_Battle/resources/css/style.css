@@ -137,16 +137,6 @@ body {
   font-size: 2rem;
 }
 
-#footer-link  {
-  color: rgb(0, 68, 255);
-  text-decoration: none;
-}
-
-#footer-link:hover {
-  font-size: 1.15rem;
-  text-decoration: underline;
-}
-
 /*----Buttons----*/
 button {
   position: absolute;
@@ -369,6 +359,16 @@ footer {
   font-weight: 600;
 }
 
+#footer-link  {
+  color: rgb(0, 68, 255);
+  text-decoration: none;
+}
+
+#footer-link:hover {
+  font-size: 1.15rem;
+  text-decoration: underline;
+}
+
 @media only screen and (max-width: 1500px) {
   .wrapper {
     width: 70%;
@@ -570,7 +570,7 @@ footer {
     }
 
     .pm-img {
-      top: 20%;
+      top: 22%;
       width: 30%;
     }
 
@@ -582,16 +582,16 @@ footer {
       top: 50%;
     }
     .btn-stop {
-      top: 60%;
+      top: 66%;
     }
 
     .btn-charge {
-      top: 55%;
+      top: 58%;
       left: 25%;
     }
 
     .btn-attack {
-      top: 55%;
+      top: 58%;
       left: 75%;
     }
 
@@ -609,13 +609,18 @@ footer {
       width: 30%;
       height: 15%;
     }
+
+    footer {
+      position: absolute;
+      left: 4%;
+    }
   }
   
   @media only screen and (max-width: 500px) {
     .title {
       top: 2%;
       left: 0;
-      font-size: 1.3rem;
+      font-size: 1.7rem;
     }
 
     .name-panel {
@@ -678,9 +683,17 @@ footer {
       height: 15%;
     }
     .pm-img { 
-      top: 28%;
+      top: 24%;
+    }
+
+    .title {
+      font-size: 1.3rem;
+    }
+  }
+  @media only screen and (max-width: 320px) { 
+    .pm-img { 
+      top: 29%;
     }
 
   }
-  
 }
