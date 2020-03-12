@@ -99,6 +99,9 @@ section span {
 
 /* =====Tour Card====== */
 
+/* .card {
+  margin-right: 50px;
+} */
 .card-section {
   background: var(--color-white);
   min-width: 340px;
@@ -236,6 +239,17 @@ footer {
   .thank-you {
     font-size: 2rem;
   }
+
+  #thankyousection {
+    height: 100vh;
+  }
+
+  .footer-line {
+    font-size: 1.2rem;
+  }
+  .social-links li {
+    font-size: 1.5rem;
+  }
 }
 
 @media only screen and (max-width: 600px) {
@@ -270,7 +284,10 @@ footer {
   .thank-you {
     font-size: 1.5rem;
   }
-  #thankyousection {
-    height: 100vh;
+}
+
+@media only screen and (max-width: 400px) {
+  .card-section {
+    min-width: 300px;
   }
 }
