@@ -52,7 +52,7 @@ h5 {
 }
 
 #footer-link:hover {
-  font-size: 1.25rem;
+  font-size: 1rem;
   text-decoration: underline;
 }
 
@@ -128,7 +128,7 @@ footer {
 
 footer h5 {
   color: var(--black-color);
-  font-size: 1.2em;
+  font-size: 1.1em;
   font-weight: 500;
 }
 
@@ -145,6 +145,10 @@ footer h5 {
   .description .main-summary {
     font-size: 1.5rem;
     margin-top: 0px;
+  }
+
+  .ingredients p {
+    font-size: 1.2rem;
   }
 }
 
