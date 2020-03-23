@@ -25,6 +25,8 @@ const p0HealthValue = document.querySelector(".health-bar-0-value");
 const p0HealthFill = document.querySelector(".health-bar-0-fill");
 const p1HealthValue = document.querySelector(".health-bar-1-value");
 const p1HealthFill = document.querySelector(".health-bar-1-fill");
+const p0hbElement = document.querySelector("health-bar-0");
+const p1hbElement = document.querySelector("health-bar-1");
 
 soundBox = {
   charging: new Audio("vendors/sounds/coins-1.wav"),
@@ -182,7 +184,7 @@ nextPlayer = () => {
 
 //Health Bar
 class HealthBar {
-  constructor(healthbar1, userInput = 0, healthValue, healthFill) {
+  constructor(hbElement, userInput = 0, healthValue, healthFill) {
     this.valueElem = healthValue;
     this.fillElem = healthFill; 
     this.setValue(userInput);
@@ -206,8 +208,8 @@ class HealthBar {
   }
 }
 
-let p0HealthBar = new HealthBar(document.querySelector("health-bar-0"), 100, p0HealthValue, p0HealthFill);
-let p1HealthBar = new HealthBar(document.querySelector("health-bar-1"), 100, p1HealthValue, p1HealthFill);
+let p0HealthBar = new HealthBar(p0hbElement, 100, p0HealthValue, p0HealthFill);
+let p1HealthBar = new HealthBar(p1hbElement, 100, p1HealthValue, p1HealthFill);
 
 init = () => {
   soundBox.newBattle.play();
