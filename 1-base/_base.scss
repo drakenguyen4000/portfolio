@@ -13,7 +13,9 @@ body {
   font-size: 100%;
   text-rendering: optimizeLegibility;
   overflow-x: hidden;
-  height: 100vh;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
   a:hover {
     text-decoration: none;
     color: white;
@@ -74,8 +76,4 @@ button {
     font-weight: normal;
     background: #5a92fc;
   }
-}
-
-button:hover {
-  background: #5a92fc;
 }

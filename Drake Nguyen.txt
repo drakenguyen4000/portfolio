@@ -1,0 +1,22 @@
+I am a self-taught, front-end web developer.  Although prior work experience had been in payroll accounting, the last four years I worked as a software content integrator for Collins Aerospace (formerly Rockwell Collins) in their Airshow interactive maps division.  In those four years, I learn a lot and grew to love working in the technology field.
+
+I configured interactive maps software contents for commercial airlines like Virgin, Korean Air, Etihad, ANA, etc.  Planning is done through collabaration with our account representatives and master scheduler.  My projects were accomplished through modification of HTML, CSS, XML, mySQL database, and content files.  These content sets would then be packaged, loaded into onto LRU hardware or mobile devices, quality checked, and documented by me.  Additionally, my other duties included working with a Content Group to manage, create, and update baseline gui contents for map products across software, browser, and mobile platforms.  I took on tasks such as deciding on user interface designs, creating GUI contents with Photoshop, styling GUI through HTML/CSS, and testing for user experience.  Being around technology and working with coworkers who were just as excited about technology was a great experience.  Nevertheless, good things do end.  My company decided to move it's Airshow unit back to Cedar Rapids, Iowa after it merged with another company.
+
+In searching for what job I wanted next, I found that Web Development offered me a way to continue my path in the technology field.  I was already familiar with HTML, CSS, content management, quality testing, and software testing.  Putting time into to learn front-end Web Development for these past months have been a struggle and marvel at where I started and arrived at.  From making modifications of existing HTML and CSS codes at my previous job to nonw building webpages from scratch, I feel accomplished and ready to learn more to become a better developer.      
+
+
+This is a list of technical skills and tools I have used in web development.  I can design and deploy responsive websites using the latest technologies. My specilization is front-end development.  
+
+
+
+If you have any questions about my projects, feel free to email!
+
+
+<a class="bouton" href="mailto:naranjaqc@hotmail.com"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Write to me!</font></font></a>
+
+
+
+
+
+
+   

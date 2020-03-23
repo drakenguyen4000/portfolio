@@ -340,17 +340,8 @@ a:hover {
   width: 100%;
 }
 
-.projects .myproject li {
-  list-style: none;
-  width: 34%;
-  padding: 14px;
-  font-size: 1.2rem;
-  margin: 10px;
-  background: rgba(95, 106, 255, 0.95);
-  font-family: "Raleway", "Muli", "Lato", "sans-serif";
-  color: white;
-  font-weight: 600;
-  border-radius: 1px;
+.projects .project-desc {
+  padding: 0 8%;
 }
 
 .projects h4 {
