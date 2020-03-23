@@ -1,4 +1,3 @@
-//variables
 let p0Health, p1Health, chargeEnergy, activePlayer, gamePlaying;
 
 //element selector variables
@@ -21,6 +20,7 @@ const winnerimg0 = document.getElementById("winner-img-0");
 const winnerimg1 = document.getElementById("winner-img-1");
 const creditsBtn = document.querySelector(".btn-credits");
 const credits = document.querySelector(".credits");
+const stopGame = document.querySelector(".btn-stop");
 
 soundBox = {
   charging: new Audio("vendors/sounds/coins-1.wav"),
@@ -38,7 +38,7 @@ startGame.addEventListener("click", () => {
 });
 
 //stop game
-document.querySelector(".btn-stop").addEventListener("click", () => {
+stopGame.addEventListener("click", () => {
   endBattle();
 });
 
@@ -107,7 +107,7 @@ attackBtn.addEventListener("click", () => {
         setTimeout(() => {
           soundBox.takeDamage.play();
           document.getElementById("standard-img-1").classList.add("damage");
-          pb1Health.setValue(p1Health);
+          pbar1Health.setValue(p1Health);
           const winner0 = () => {
             setTimeout(() => {
               //Checks if there is a winner?
@@ -131,7 +131,7 @@ attackBtn.addEventListener("click", () => {
     } else {
       //Player 2
       p0Health = p0Health - chargeEnergy;
-      pb0Health.setValue(p0Health);
+      pbar0Health.setValue(p0Health);
       p1Energy.textContent = "0";
       soundBox.energyBlast.play();
       soundBox.energyBlast.volume = 0.2;
@@ -139,7 +139,7 @@ attackBtn.addEventListener("click", () => {
         setTimeout(() => {
           soundBox.takeDamage.play();
           document.getElementById("standard-img-0").classList.add("damage");
-          pb0Health.setValue(p0Health);
+          pbar0Health.setValue(p0Health);
           const winner1 = () => {
             setTimeout(() => {
               if (p0Health > 0) {
@@ -178,7 +178,7 @@ nextPlayer = () => {
 
 //Health Bar Player 0
 class HealthBar0 {
-  constructor(docQuerySelect, userInput = 0) {
+  constructor(healthbar0, userInput = 0) {
     this.valueElem = document.querySelector(".health-bar-0-value");
     this.fillElem = document.querySelector(".health-bar-0-fill");
     //calls setValue function, pass userInput as argument
@@ -212,7 +212,7 @@ class HealthBar0 {
 
 //Health Bar Player1
 class HealthBar1 {
-  constructor(docQuerySelect, userInput = 0) {
+  constructor(healthbar1, userInput = 0) {
     this.valueElem = document.querySelector(".health-bar-1-value");
     this.fillElem = document.querySelector(".health-bar-1-fill");
     this.setValue(userInput);
@@ -236,9 +236,8 @@ class HealthBar1 {
   }
 }
 
-//Instance
-let pb0Health = new HealthBar0(document.querySelector("health-bar-0"), 100);
-let pb1Health = new HealthBar1(document.querySelector("health-bar-1"), 100);
+let pbar0Health = new HealthBar0(document.querySelector("health-bar-0"), 100);
+let pbar1Health = new HealthBar1(document.querySelector("health-bar-1"), 100);
 
 init = () => {
   soundBox.newBattle.play();
@@ -263,8 +262,8 @@ init = () => {
   p0Panel.classList.remove("active");
   p1Panel.classList.remove("active");
   p0Panel.classList.add("active");
-  pb0Health.setValue(p0Health);
-  pb1Health.setValue(p1Health);
+  pbar0Health.setValue(p0Health);
+  pbar1Health.setValue(p1Health);
 }
 
 endBattle = () => {
@@ -286,6 +285,6 @@ endBattle = () => {
   p1Panel.classList.remove("winner");
   p0Panel.classList.remove("active");
   p1Panel.classList.remove("active");
-  pb0Health.setValue(p0Health);
-  pb1Health.setValue(p1Health);
+  pbar0Health.setValue(p0Health);
+  pbar1Health.setValue(p1Health);
 }
