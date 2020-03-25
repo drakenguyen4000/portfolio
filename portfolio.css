@@ -323,8 +323,8 @@ a:hover {
   display: -ms-grid;
   display: grid;
   grid-gap: 20px;
-  -ms-grid-columns: (minmax(300px, auto))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+  -ms-grid-columns: (minmax(350px, auto))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(350px, auto));
   -ms-flex-pack: distribute;
       justify-content: space-around;
 }
@@ -341,7 +341,7 @@ a:hover {
 }
 
 .projects .project-desc {
-  padding: 0 8%;
+  padding: 0 12%;
 }
 
 .projects h4 {
@@ -370,11 +370,15 @@ button {
 }
 
 @media only screen and (max-width: 500px) {
+  .projects {
+    -ms-grid-columns: (minmax(300px, auto))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+  }
+  .projects .myproject p {
+    font-size: 1.2rem;
+  }
   p {
     text-align: left;
-  }
-  .projects .myproject li {
-    font-size: 1rem;
   }
 }
 

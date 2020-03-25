@@ -1,19 +1,18 @@
 .projects {
   display: grid;
   grid-gap: 20px;
-  grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+  grid-template-columns: repeat(auto-fit, minmax(350px, auto));
   justify-content: space-around;
   .myproject {
     background: $base-color2;
     box-shadow: 1px 1px rgb(236, 236, 236);
     padding: 0px 0 80px 0px;
-
   }
   .myproject img {
     width: 100%;
   }
   .project-desc {
-    padding: 0 8%;
+    padding: 0 12%;
   }
   h4 {
     display: flex;
@@ -36,11 +35,13 @@ button {
 }
 
 @media only screen and (max-width: 500px) {
+  .projects {
+    grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+    .myproject p {
+      font-size: 1.2rem;
+    }
+  }  
   p {
     text-align: left;
-  }
-
-  .projects .myproject li {
-    font-size: 1rem;
   }
 }
