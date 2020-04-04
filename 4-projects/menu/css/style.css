@@ -1,0 +1,380 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  background-color: #fff;
+  color: #555;
+  font-family: "Aleo";
+  letter-spacing: 1px;
+  font-size: 100%;
+  overflow-x: hidden;
+  height: 100vh;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+/*----helper Classes----*/
+.alignLeft {
+  float: left;
+}
+
+.alignRight {
+  float: right;
+}
+
+strong,
+b {
+  font-weight: 700;
+}
+
+/*---- GENERAL RULES----*/
+
+@font-face {
+  font-family: "WCManoNegraBta";
+  src: local("WCManoNegraBta.otf"), url("WCManoNegraBta.otf") format("opentype");
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  position: relative;
+  padding: 0px 20px;
+}
+
+.topic {
+  font-size: 20px;
+  color: #3b3b3b;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 80px;
+}
+
+/*----nav----*/
+#nav .container {
+  padding: 55px;
+}
+
+.nav li {
+  margin-left: 50px;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+/*----hero----*/
+#hero {
+  background-image: linear-gradient(
+      rgba(20, 10, 10, 0.6),
+      rgba(48, 46, 46, 0.6)
+    ),
+    url("../img/hero.png");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.restaurant {
+  font-family: "WCManoNegraBta";
+  color: white;
+  font-size: 6.2rem;
+  padding: 220px 140px 25px 90px;
+  letter-spacing: -9px;
+  line-height: 60px;
+  color: #ffffff;
+  font-weight: 400;
+  text-align: center;
+}
+
+.phrase {
+  color: white;
+  padding: 25px 0 210px 0;
+  text-align: center;
+}
+
+/*----menu-----*/
+.menu {
+  padding-bottom: 210px;
+}
+
+.tab {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 40px;
+}
+
+.menu-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 90px;
+  margin-bottom: 122px;
+}
+
+.list {
+  display: grid;
+  grid-template-columns: minmax(220px, 50%) minmax(50px, 40%) 10%;
+  grid-template-rows: 40px 20px;
+  grid-gap: 5px;
+  line-height: 60px;
+  word-wrap: normal;
+  font-family: "Aleo";
+}
+
+hr {
+  height: 1px;
+  margin: 30px 30px 0 0;
+  font-weight: 10;
+  color: #e3e1e1;
+}
+
+.item {
+  font-size: 16px;
+  color: #555555;
+  font-weight: 400;
+}
+
+.ingredients {
+  font-size: 12px;
+  color: #b7b7b7;
+  font-style: italic;
+  line-height: 10px;
+}
+
+.price {
+  text-align: right;
+  padding-right: 30px;
+}
+
+.loadmore {
+  display: flex;
+  justify-content: center;
+}
+
+.load-btn {
+  border: 1px #b7b7b7 solid;
+  padding: 10px 15px;
+  font-size: 14px;
+  color: #b7b7b7;
+  font-weight: 400;
+}
+
+i {
+  vertical-align: middle;
+  margin-left: 2px;
+}
+
+.divider {
+  padding: 0 10px;
+}
+
+/*----featured dish----*/
+#featured-dishes {
+  padding-bottom: 200px;
+}
+
+.dishes {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 230px));
+  grid-gap: 60px;
+  justify-content: space-evenly;
+  font-size: 16px;
+}
+
+.dish-1,
+.dish-2,
+.dish-3,
+.dish-4 {
+  width: 230px;
+  height: 230px;
+  background-position: center;
+  background-size: cover;
+}
+
+.dish-1 {
+  background-image: url("../img/dish1.png");
+}
+.dish-2 {
+  background-image: url("../img/dish2.png");
+}
+.dish-3 {
+  background-image: url("../img/dish3.png");
+}
+.dish-4 {
+  background-image: url("../img/dish4.png");
+}
+
+.description {
+  display: grid;
+  grid-template-columns: 200px 30px;
+  grid-template-rows: 45px 25px;
+  align-items: end;
+}
+
+/*----The Gallery----*/
+
+#gallery {
+  padding-bottom: 200px;
+}
+
+.frame {
+  display: grid;
+  grid-template-areas:
+    "main croissants pizza"
+    "main berries spaghetti";
+  grid-gap: 0;
+  margin: 0;
+  justify-content: space-around;
+}
+
+.main {
+  background-image: url("../img/pastries.png");
+  background-position: center;
+  background-size: cover;
+  width: 365px;
+  min-height: 434px;
+  grid-area: main;
+}
+
+.images {
+  background-position: center;
+  background-size: cover;
+  width: 365px;
+  height: 217px;
+}
+
+.croissants {
+  background-image: url("../img/croissants.png");
+  grid-area: croissants;
+}
+.pizza {
+  background-image: url("../img/pizza.png");
+  grid-area: pizza;
+}
+.berries {
+  background-image: url("../img/berries.png");
+  grid-area: berries;
+}
+
+.spaghetti {
+  background-image: url("../img/spaghetti.png");
+  grid-area: spaghetti;
+}
+
+/*----footer----*/
+#footer {
+  background: #3b3b3b;
+  padding: 100px 0 110px 0;
+  font-size: 16px;
+  line-height: 30px;
+  color: #ffffff;
+  font-weight: 100;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(230px, 230px));
+  grid-gap: 60px;
+  justify-content: space-around;
+}
+
+.location li:first-child {
+  font-weight: 400;
+}
+
+.directories {
+  font-weight: 500;
+}
+
+.copyright {
+  font-size: 14px;
+}
+
+@media only screen and (max-width: 1130px) {
+  .frame {
+    grid-template-areas:
+      "main croissants"
+      "main berries"
+      "pizza spaghetti";
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .navbar {
+    overflow: hidden;
+    position: absolute;
+    right: 30px;
+    top: 50px;
+    display: block;
+  }
+
+  .burger-nav {
+    background: url("../img/hamburger.png") no-repeat 100% center;
+    display: block;
+    height: 31px;
+    width: 50px;
+    cursor: pointer;
+    float: right;
+    margin-bottom: 10px;
+  }
+
+  .container nav ul {
+    height: 0px;
+    overflow: hidden;
+    background: #282828;
+    border-radius: 5px;
+  }
+
+  .container nav ul.open {
+    height: auto;
+    clear: both;
+  }
+
+  .container nav ul li {
+    float: none;
+    text-align: right;
+    width: auto;
+    margin: 0;
+    display: block;
+    color: white;
+    padding: 10px;
+  }
+
+  .container nav ul li a:hover {
+    border: none;
+  }
+}
+
+@media only screen and (max-width: 763px) {
+  .frame {
+    grid-template-areas:
+      "main"
+      "croissants"
+      "pizza"
+      "berries"
+      "spaghetti";
+  }
+  .menu-list {
+    grid-gap: 0;
+  }
+}
+
+@media only screen and (max-width: 600px){
+  .restaurant {
+    padding: 220px 0px 25px 0px;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .list {
+    grid-template-columns: minmax(220px, 50%) 0 10%;
+  }
+}

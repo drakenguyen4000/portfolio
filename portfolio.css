@@ -215,7 +215,7 @@ a:hover {
     padding: 1% 0.2%;
     display: -ms-grid;
     display: grid;
-        grid-template-areas: "social-media" "navigations";
+        grid-template-areas: "social-media" "navigations";
   }
   .social-media {
     text-align: center;
@@ -361,6 +361,15 @@ a:hover {
   width: 100%;
   height: 60px;
   color: white;
+}
+
+.project-desc h5 {
+  text-align: center;
+  margin-top: 10%;
+}
+
+.project-desc h5 #sample-link {
+  color: #347afd;
 }
 
 button {
