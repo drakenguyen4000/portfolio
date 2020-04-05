@@ -115,7 +115,6 @@ b {
 .menu-list {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  /* grid-column-gap: 90px; */
   grid-column-gap: 90px;
   margin-bottom: 122px;
 }
@@ -368,17 +367,12 @@ i {
       "spaghetti";
   }
   .menu-list {
-    background: blue;
     grid-row-gap: 0px;
+    grid-column-gap: 30px;
+
   }
   .testx {
     color: yellow;
-  }
-}
-
-@media only screen and (max-width: 720px) {
-  .testx {
-    color: orange;
   }
 }
 
@@ -389,11 +383,25 @@ i {
   .testx {
     color: purple;
   }
+  .list {
+    font-size: .875rem;
+  }
+  .ingredients {
+    font-size: .75rem;
+  }
+
 }
 
-@media only screen and (max-width: 320px) {
-
+@media only screen and (max-width: 400px) {
+  .list {
+    grid-template-columns: minmax(220px, 50%) 0 10%;
+    
+  }
   .testx {
     color: pink;
+  }
+
+  hr {
+    color: white;
   }
 }
