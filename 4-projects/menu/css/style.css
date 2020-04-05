@@ -305,6 +305,9 @@ i {
       "main berries"
       "pizza spaghetti";
   }
+  .testx {
+    color: red;
+  }
 }
 
 @media only screen and (max-width: 900px) {
@@ -351,6 +354,10 @@ i {
   .container nav ul li a:hover {
     border: none;
   }
+
+  .testx {
+    color: green;
+  }
 }
 
 @media only screen and (max-width: 763px) {
@@ -365,16 +372,25 @@ i {
   .menu-list {
     grid-gap: 0;
   }
+  .testx {
+    color: yellow;
+  }
 }
 
 @media only screen and (max-width: 600px){
   .restaurant {
     padding: 220px 0px 25px 0px;
   }
+  .testx {
+    color: purple;
+  }
 }
 
 @media only screen and (max-width: 320px) {
   .list {
     grid-template-columns: minmax(220px, 50%) 0 10%;
+  }
+  .testx {
+    color: pink;
   }
 }
