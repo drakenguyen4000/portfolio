@@ -1,0 +1,33 @@
+//Global variables
+
+$base-color: #15284b;
+$base-color2: white;
+$base-font-color: #313131;
+$main-color: #f9b115;
+$secondary-color: #f5b221;
+$third-color: #f3a703;
+
+$emphasis-color: rgb(43, 43, 43);
+$lite-emphasis-color: rgb(116, 116, 116);
+
+$font-stack-sans-serif: "Poppins", "Raleway", "Muli", "Lato", "sans-serif";
+$font-stack-serif:  "Cardo", "Vollkorn", "Merriweather", "serif";
+$font-weight-standard: 300;
+
+
+//inheritance
+%margin-bottom {
+    margin-bottom: 30px;
+  }
+
+%box-shadow {
+  box-shadow: 2px 2px 2px rgb(187, 187, 187);
+}
+
+%border-radius {
+  border-radius: 5px;
+}
+
+%text-shadow {
+  text-shadow: 1px 1px 1px rgb(85, 85, 85);
+}

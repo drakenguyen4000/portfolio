@@ -3,6 +3,23 @@
   margin-bottom: 30px;
 }
 
+.bio, .development, .skills div, .projects .myproject, .contact-page {
+  -webkit-box-shadow: 2px 2px 2px #bbbbbb;
+          box-shadow: 2px 2px 2px #bbbbbb;
+}
+
+.bio, .development, .contact-page {
+  border-radius: 5px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5, .topic, button, .nav, .skills h3 {
+  text-shadow: 1px 1px 1px #555555;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -12,14 +29,13 @@
 
 html,
 body {
-  background-color: #f7f7f8;
+  background-color: #15284b;
   color: #313131;
-  font-family: "Cardo", "Vollkorn", "Merriweather", "serif";
+  font-family: "Poppins", "Raleway", "Muli", "Lato", "sans-serif";
   font-weight: 300;
   font-size: 100%;
   text-rendering: optimizeLegibility;
   overflow-x: hidden;
-  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -32,11 +48,11 @@ body {
 html a:hover,
 body a:hover {
   text-decoration: none;
-  color: white;
+  color: #15284b;
   -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
-  background: #3276f5;
   font-weight: bold;
+  text-decoration: underline;
 }
 
 .wrapper {
@@ -45,7 +61,7 @@ body a:hover {
   grid-gap: 20px;
   width: 91%;
   margin: 5%;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
 }
 
 h1,
@@ -53,12 +69,8 @@ h2,
 h3,
 h4,
 h5 {
-  color: #2b2b2b;
-  font-family: "Raleway", "Muli", "Lato", "sans-serif";
-}
-
-hr {
-  color: #f1efef;
+  color: #f3a703;
+  font-family: "Poppins", "Raleway", "Muli", "Lato", "sans-serif";
 }
 
 h1 {
@@ -71,26 +83,53 @@ section {
 
 .topic {
   text-align: center;
-}
-
-p {
-  text-align: justify;
+  color: #f9b115;
+  font-size: 1.8rem;
 }
 
 button {
-  height: 40px;
+  height: 50px;
   width: auto;
-  padding: 5px;
+  padding: 12px 15px 18px 15px;
   color: white;
   font-weight: 400;
-  background: #347afd;
+  background: #f3a703;
+  border-radius: 5px;
   border: none;
 }
 
 button a:hover {
   font-size: 1.3rem;
   font-weight: normal;
-  background: #5a92fc;
+  background: none;
+}
+
+.js--wp-1,
+.js--wp-2,
+.js--wp-3 {
+  opacity: 0;
+}
+
+.js--wp-1.animated {
+  opacity: 1;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+}
+
+.js--wp-2.animated {
+  opacity: 1;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+}
+
+.js--wp-3.animated {
+  opacity: 1;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
 }
 
 header {
@@ -122,7 +161,7 @@ header .background-img {
 }
 
 header h1 {
-  color: white;
+  color: #f9b115;
   font-size: 3rem;
   text-transform: uppercase;
 }
@@ -147,7 +186,7 @@ header h3 {
 }
 
 footer {
-  background: #6a9bf5;
+  background: #f9b115;
   padding: 20px 30px 10px 30px;
   text-align: center;
   font-family: "Cardo", "Vollkorn", "Merriweather", "serif";
@@ -178,9 +217,9 @@ footer .webicons img {
   position: fixed;
   top: 0;
   width: 100%;
-  background-color: #6a9bf5;
+  background-color: #f9b115;
   font-weight: 300;
-  font-family: "Raleway", "Muli", "Lato", "sans-serif";
+  font-family: "Poppins", "Raleway", "Muli", "Lato", "sans-serif";
   color: white;
   z-index: 10;
 }
@@ -205,11 +244,6 @@ a:link, a:visited {
   text-decoration: none;
 }
 
-a:hover {
-  color: blue;
-  text-decoration: underline;
-}
-
 @media (max-width: 500px) {
   .nav {
     padding: 1% 0.2%;
@@ -231,9 +265,8 @@ a:hover {
 }
 
 .bio {
-  font-family: "Cardo", "Vollkorn", "Merriweather", "serif";
+  font-family: "Poppins", "Raleway", "Muli", "Lato", "sans-serif";
   background: white;
-  border-radius: 2px;
   margin-top: 80px;
   padding: 4% 8%;
 }
@@ -242,21 +275,22 @@ a:hover {
   background: white;
   padding: 4% 8%;
   margin-bottom: 4%;
-  border-radius: 2px;
 }
 
 .development h4 {
-  color: #4484fa;
+  color: #f5b221;
   text-align: center;
 }
 
 .development #download-link {
-  color: #347afd;
+  color: #f3a703;
 }
 
 .development #download-link:hover {
   color: white;
-  background: #3276f5;
+  background: #f9b115;
+  padding: 20px;
+  border-radius: 40px;
 }
 
 .skills {
@@ -276,7 +310,7 @@ a:hover {
   font-family: "Muli";
   font-size: 1.8rem;
   font-weight: 10;
-  background: #4484fa;
+  background: #f5b221;
   height: 60px;
   padding-top: 15px;
   color: white;
@@ -302,7 +336,7 @@ a:hover {
 }
 
 .skills ul li::before {
-  color: #6a9bf5;
+  color: #f9b115;
   margin-right: 10px;
   content: "✓";
 }
@@ -331,8 +365,6 @@ a:hover {
 
 .projects .myproject {
   background: white;
-  -webkit-box-shadow: 1px 1px #ececec;
-          box-shadow: 1px 1px #ececec;
   padding: 0px 0 80px 0px;
 }
 
@@ -341,7 +373,11 @@ a:hover {
 }
 
 .projects .project-desc {
-  padding: 0 12%;
+  padding: 3% 12%;
+}
+
+.projects .project-desc p {
+  font-size: 1rem;
 }
 
 .projects h4 {
@@ -357,7 +393,7 @@ a:hover {
   font-family: "Muli";
   font-size: 1.7rem;
   font-weight: 10;
-  background: #4484fa;
+  background: #f5b221;
   width: 100%;
   height: 60px;
   color: white;
@@ -369,7 +405,7 @@ a:hover {
 }
 
 .project-desc h5 #sample-link {
-  color: #347afd;
+  color: #f3a703;
 }
 
 button {
@@ -396,7 +432,6 @@ button {
   background: white;
   padding: 4% 8%;
   border: 1px solid white;
-  border-radius: 2px;
 }
 
 .contact-page .contact-button {

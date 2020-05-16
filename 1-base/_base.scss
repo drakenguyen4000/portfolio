@@ -8,20 +8,19 @@ html,
 body {
   background-color: $base-color;
   color: $base-font-color;
-  font-family: $font-stack-serif;
+  font-family: $font-stack-sans-serif;
   font-weight: $font-weight-standard;
   font-size: 100%;
   text-rendering: optimizeLegibility;
   overflow-x: hidden;
-  height: 100%;
   display: flex;
   flex-direction: column;
   a:hover {
     text-decoration: none;
-    color: white;
+    color: $base-color;
     transition: all 0.4s ease-in-out;
-    background: #3276f5;
     font-weight: bold;
+    text-decoration: underline;
   }
 }
 
@@ -30,7 +29,7 @@ body {
   grid-gap: 20px;
   width: 91%;
   margin: 5%;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
 }
 
 h1,
@@ -38,12 +37,9 @@ h2,
 h3,
 h4,
 h5 {
-  color: $emphasis-color;
+  color: $third-color;
   font-family: $font-stack-sans-serif;
-}
-
-hr {
-  color: rgb(241, 239, 239);
+  @extend %text-shadow;
 }
 
 h1 {
@@ -56,24 +52,25 @@ section {
 
 .topic {
   text-align: center;
+  color: $main-color;
+  font-size: 1.8rem;
   @extend %margin-bottom;
-}
-
-p {
-  text-align: justify;
+  @extend %text-shadow;
 }
 
 button {
-  height: 40px;
+  height: 50px;
   width: auto;
-  padding: 5px;
+  padding: 12px 15px 18px 15px;
   color: white;
   font-weight: 400;
   background: $third-color;
+  border-radius: 5px;
   border: none;
+  @extend %text-shadow;
   a:hover {
     font-size: 1.3rem;
     font-weight: normal;
-    background: #5a92fc;
+    background: none;
   }
 }

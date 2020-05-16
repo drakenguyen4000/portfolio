@@ -18,7 +18,7 @@ header {
     text-align: center;
   }
   h1 {
-    color: white;
+    color: $main-color;
     font-size: 3rem;
     text-transform: uppercase;
   }
@@ -27,6 +27,7 @@ header {
     font-size: 1.7rem;
     font-weight: 800;
   }
+  
   @media only screen and (max-width: 500px) {
     .background-img {
       width: 100%;

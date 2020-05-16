@@ -1,9 +1,10 @@
 .bio {
-  font-family: $font-stack-serif;
+  font-family: $font-stack-sans-serif;
   background: white;
-  border-radius: 2px;
   margin-top: 80px;
   padding: 4% 8%;
+  @extend %box-shadow;
+  @extend %border-radius;
   h1 {
     @extend %margin-bottom;
   }
@@ -13,7 +14,8 @@
   background: white;
   padding: 4% 8%;
   margin-bottom: 4%;
-  border-radius: 2px;
+  @extend %box-shadow;
+  @extend %border-radius;
   h4 {
     color: $secondary-color;
     text-align: center;
@@ -26,7 +28,9 @@
   }
   #download-link:hover {
     color: white;
-    background: #3276f5;
+    background: $main-color;
+    padding: 20px;
+    border-radius: 40px;
   }
 }
 
@@ -46,9 +50,11 @@
     height: 60px;
     padding-top: 15px;
     color: white;
+    @extend %text-shadow;
   }
   div {
     background: white;
+    @extend %box-shadow;
   }
   ul {
     list-style: none;
