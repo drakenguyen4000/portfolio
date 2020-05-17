@@ -21,5 +21,95 @@
   animation-duration: 1s;
 }
 
+.js--wp-4.animated {
+  opacity: 1;
+  animation-delay: 5.5s;
+  animation-duration: 1s;
+}
 
+.js--wp-n-1,
+.js--wp-n-2,
+.js--wp-n-3, 
+.js--wp-n-4, 
+.js--wp-n-5, 
+.js--wp-n-6, 
+.js--wp-n-7, 
+.js--wp-n-8, 
+.js--wp-n-9, 
+.js--wp-n-10, 
+.js--wp-n-11 {
+  opacity: 0;
+}
+
+.js--wp-n-1.animated {
+  opacity: 1;
+  animation-duration: .25s;
+}
+
+.js--wp-n-2.animated {
+  opacity: 1;
+  animation-delay: .5s;
+  animation-duration: .25s;
+}
+
+.js--wp-n-3.animated {
+  opacity: 1;
+  animation-delay: .75s;
+  animation-duration: .25s;
+}
+.js--wp-n-4.animated {
+  opacity: 1;
+  animation-delay: 1.5s;
+  animation-duration: .25s;
+}
+.js--wp-n-5.animated {
+  opacity: 1;
+  animation-delay: 2s;
+  animation-duration: .25s;
+}
+.js--wp-n-6.animated {
+  opacity: 1;
+  animation-delay: 2.5s;
+  animation-duration: .25s;
+}
+.js--wp-n-7.animated {
+  opacity: 1;
+  animation-delay: 3s;
+  animation-duration: .25s;
+}
+.js--wp-n-8.animated {
+  opacity: 1;
+  animation-delay: 3.5s;
+  animation-duration: .25s;
+}
+.js--wp-n-9.animated {
+  opacity: 1;
+  animation-delay: 4s;
+  animation-duration: .25s;
+}
+.js--wp-n-10.animated {
+  opacity: 1;
+  animation-delay: 4.5s;
+  animation-duration: .25s;
+}
+.js--wp-n-11.animated {
+  opacity: 1;
+  animation-delay: 5s;
+  animation-duration: .25s;
+}
+
+.js--wp-n-12.animated {
+  opacity: 1;
+  animation-delay: 6s;
+  animation-duration: .25s;
+}
+
+//name letter spacing fix
+.name {
+  margin: -1.4%;
+}
+
+.js--wp-n-5 {
+  margin-right: 1%;
+}
 
