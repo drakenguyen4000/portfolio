@@ -30,7 +30,7 @@ h5, .topic, button, .nav, .skills h3 {
 html,
 body {
   background-color: #15284b;
-  color: #313131;
+  color: #666666;
   font-family: "Poppins", "Raleway", "Muli", "Lato", "sans-serif";
   font-weight: 300;
   font-size: 100%;
@@ -446,7 +446,7 @@ a:link, a:visited {
 
 .skills ul {
   list-style: none;
-  background: white;
+  background: #fcfcfc;
   padding: 0 40px 40px 40px;
   border-radius: 2px;
 }
@@ -488,7 +488,7 @@ a:link, a:visited {
 }
 
 .projects .myproject {
-  background: white;
+  background: #fcfcfc;
   padding: 0px 0 80px 0px;
 }
 
@@ -555,7 +555,7 @@ button {
   margin-top: 80px;
   background: white;
   padding: 4% 8%;
-  border: 1px solid white;
+  border: 1px solid #fcfcfc;
 }
 
 .contact-page .contact-button {
