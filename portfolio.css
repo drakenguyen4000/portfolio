@@ -162,13 +162,21 @@ button a:hover {
 
 .js--wp-n-2.animated {
   opacity: 1;
+  -webkit-animation-delay: .25s;
+          animation-delay: .25s;
+  -webkit-animation-duration: .25s;
+          animation-duration: .25s;
+}
+
+.js--wp-n-3.animated {
+  opacity: 1;
   -webkit-animation-delay: .5s;
           animation-delay: .5s;
   -webkit-animation-duration: .25s;
           animation-duration: .25s;
 }
 
-.js--wp-n-3.animated {
+.js--wp-n-4.animated {
   opacity: 1;
   -webkit-animation-delay: .75s;
           animation-delay: .75s;
@@ -176,7 +184,23 @@ button a:hover {
           animation-duration: .25s;
 }
 
-.js--wp-n-4.animated {
+.js--wp-n-5.animated {
+  opacity: 1;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+  -webkit-animation-duration: .25s;
+          animation-duration: .25s;
+}
+
+.js--wp-n-6.animated {
+  opacity: 1;
+  -webkit-animation-delay: 1.25s;
+          animation-delay: 1.25s;
+  -webkit-animation-duration: .25s;
+          animation-duration: .25s;
+}
+
+.js--wp-n-7.animated {
   opacity: 1;
   -webkit-animation-delay: 1.5s;
           animation-delay: 1.5s;
@@ -184,7 +208,15 @@ button a:hover {
           animation-duration: .25s;
 }
 
-.js--wp-n-5.animated {
+.js--wp-n-8.animated {
+  opacity: 1;
+  -webkit-animation-delay: 1.75s;
+          animation-delay: 1.75s;
+  -webkit-animation-duration: .25s;
+          animation-duration: .25s;
+}
+
+.js--wp-n-9.animated {
   opacity: 1;
   -webkit-animation-delay: 2s;
           animation-delay: 2s;
@@ -192,7 +224,15 @@ button a:hover {
           animation-duration: .25s;
 }
 
-.js--wp-n-6.animated {
+.js--wp-n-10.animated {
+  opacity: 1;
+  -webkit-animation-delay: 2.25s;
+          animation-delay: 2.25s;
+  -webkit-animation-duration: .25s;
+          animation-duration: .25s;
+}
+
+.js--wp-n-11.animated {
   opacity: 1;
   -webkit-animation-delay: 2.5s;
           animation-delay: 2.5s;
@@ -200,50 +240,10 @@ button a:hover {
           animation-duration: .25s;
 }
 
-.js--wp-n-7.animated {
-  opacity: 1;
-  -webkit-animation-delay: 3s;
-          animation-delay: 3s;
-  -webkit-animation-duration: .25s;
-          animation-duration: .25s;
-}
-
-.js--wp-n-8.animated {
-  opacity: 1;
-  -webkit-animation-delay: 3.5s;
-          animation-delay: 3.5s;
-  -webkit-animation-duration: .25s;
-          animation-duration: .25s;
-}
-
-.js--wp-n-9.animated {
-  opacity: 1;
-  -webkit-animation-delay: 4s;
-          animation-delay: 4s;
-  -webkit-animation-duration: .25s;
-          animation-duration: .25s;
-}
-
-.js--wp-n-10.animated {
-  opacity: 1;
-  -webkit-animation-delay: 4.5s;
-          animation-delay: 4.5s;
-  -webkit-animation-duration: .25s;
-          animation-duration: .25s;
-}
-
-.js--wp-n-11.animated {
-  opacity: 1;
-  -webkit-animation-delay: 5s;
-          animation-delay: 5s;
-  -webkit-animation-duration: .25s;
-          animation-duration: .25s;
-}
-
 .js--wp-n-12.animated {
   opacity: 1;
-  -webkit-animation-delay: 6s;
-          animation-delay: 6s;
+  -webkit-animation-delay: 2.75s;
+          animation-delay: 2.75s;
   -webkit-animation-duration: .25s;
           animation-duration: .25s;
 }
