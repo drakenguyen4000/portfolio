@@ -16,7 +16,7 @@
 html,
 body {
   background: #17a2b8;
-  color: white;
+  color: var(--color-white);
   font-family: "Open Sans", "Roboto", "Lato", "Arial", sans-serif;
   font-size: 100%;
   font-weight: 300;
@@ -76,7 +76,7 @@ section span {
 .jumbotron h1 {
   font-weight: 400;
   padding: 0 10% 10% 10%;
-  text-shadow: 4px 2px 1px rgb(24, 23, 23);
+  text-shadow: 4px 2px 1px #181717;
 }
 
 /*----------History---------*/
@@ -94,20 +94,10 @@ section span {
   background: var(--color-gold);
   color: var(--color-white);
   font-weight: 500;
-  text-shadow: 1px 1px rgb(172, 172, 172);
+  text-shadow: 1px 1px #acacac;
 }
 
 /* =====Tour Card====== */
-
-.toursection {
-  background: white;
-  border-radius: 10px;
-  padding: 0px 20px 20px 30px;
-}
-
-.tour-header {
-  color: #fcd31e;
-}
 
 .card-section {
   background: var(--color-white);
@@ -121,44 +111,55 @@ section span {
 
 .card-body {
   background: rgba(249, 249, 249, 0.5);
-  color: rgb(8, 7, 7);
+  color: #080707;
+}
+
+.card-width {
+  width: 21rem !important;
+  border-radius: 0px;
+}
+
+.card-img-top {
+  border-radius: 0px;
 }
 
 /* ======== food section ======== */
 
 .img-thumbnail {
   margin-bottom: 30px;
+  border-radius: 0px;
+  background: #efefef;
 }
 
-.tour-card {
-  color: green;
+/* =========City Guide========== */
+
+.guide-header {
+  color: #fcd31e;
+  text-shadow: 1px 1px #acacac;
 }
 
-/* ======== Contact Form ========= */
-
-.contact-form {
-  background: var(--color-white);
-  color: rgb(118, 118, 252);
-  padding-bottom: 20px;
-}
-
-/* ==========Our Tours Page========== */
-
-.toursection {
+.guide-section {
   margin-top: 100px;
 }
 
 .carousel {
-  max-height: 480px;
-  max-width: 720px;
+  max-width: 600px;
 }
 
-.tour-postit-body {
-  background: rgba(249, 249, 249, 0.9);
-  border-radius: 5px;
-  color: rgb(94, 84, 84);
-  font-size: 1rem;
-  font-family: "lato";
+.carousel-caption h3 {
+  background: rgba(252, 211, 30, .9);
+  padding:0 3px;
+}
+
+.portrait {
+  background: var(--color-white);
+}
+
+.guidecard {
+  border: 10px solid #efefef;
+  color: #000000;
+  font-weight: 300;
+  background: var(--color-white);
 }
 
 .tour-text {
@@ -166,23 +167,7 @@ section span {
 }
 
 .tour-title {
-  color: rgb(13, 173, 157);
-}
-
-.tour-subtitle {
-  background: var(--color-gold);
-  border-radius: 1px;
-  box-shadow: 1px 1px rgb(207, 206, 206);
-  color: var(--color-white);
-  font-family: "roboto";
-  font-size: 1.4rem;
-  font-weight: 400;
-  padding: 10px;
-  text-shadow: 1px 1px rgb(190, 190, 190);
-}
-
-#thankyou-footer {
-  margin-top: 10%;
+  color: #0dad9d;
 }
 
 footer {
@@ -204,7 +189,8 @@ footer {
 .js--wp-4,
 .js--wp-5,
 .js--wp-6,
-.js--wp-7 {
+.js--wp-7,
+.js--wp-8 {
   opacity: 0;
 }
 
@@ -243,14 +229,6 @@ footer {
     margin-left: -40px;
   }
 
-  .thank-you {
-    font-size: 2rem;
-  }
-
-  #thankyousection {
-    height: 100vh;
-  }
-
   .footer-line {
     font-size: 1.1rem;
   }
@@ -287,10 +265,7 @@ footer {
   .tour-header {
     font-size: 2rem;
   }
-
-  .thank-you {
-    font-size: 1.5rem;
-  }
+  
   .toursection {
     margin-left: 15px;
   }
