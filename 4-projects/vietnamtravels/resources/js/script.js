@@ -48,7 +48,7 @@ card.forEach(function(card) {
   if (card < 4) {
     $(".js--wp-" + card.toString()).waypoint(
       function(direction) {
-        $(".js--wp-" + card).addClass("animated fadeInRight");
+        $(".js--wp-" + card.toString()).addClass("animated fadeInRight");
       },
       {
         offset: "50%"
