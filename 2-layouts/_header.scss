@@ -27,6 +27,15 @@ header {
     font-size: 1.7rem;
     font-weight: 800;
   }
+
+  #new-portfolio-link {
+    color: rgb(121, 173, 252);
+    font-weight: 800;
+    font-size: 1.5rem;
+  }
+  #new-portfolio-link:hover {
+    color: rgb(252, 96, 96);
+  }
   
   @media only screen and (max-width: 500px) {
     .background-img {

@@ -1,52 +1,59 @@
 .nav {
-    padding: 1% 5%;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background-color: $main-color;
-    font-weight: $font-weight-standard;
-    font-family: $font-stack-sans-serif;
-    color: white;
-    @extend %text-shadow;
-    z-index: 10;
-    div a {
-      margin: 20px 10px;
-      padding: 2px;
-    }
-    .social-media {
-      float: left;
-      font-size: 1.8rem;
-    }
-    .navigations {
-      float: right;
-      font-size: 1.1rem;
-    }
+  padding: 1% 5%;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: $main-color;
+  font-weight: $font-weight-standard;
+  font-family: $font-stack-sans-serif;
+  color: white;
+  @extend %text-shadow;
+  z-index: 10;
+  div a {
+    margin: 20px 10px;
+    padding: 2px;
   }
-  
-  a:link, a:visited {
-    color: white;
-    text-decoration: none;
+  .social-media {
+    float: left;
+    font-size: 1.8rem;
   }
-  
-  @media (max-width: 500px) {
-    .nav {
-      padding: 1% 0.2%;
-      display: grid;
-      grid-template-areas: 
+  .navigations {
+    float: right;
+    font-size: 1.1rem;
+  }
+}
+
+a:link,
+a:visited {
+  color: white;
+  text-decoration: none;
+}
+
+@media (max-width: 500px) {
+  .social-media {
+    grid-area: social-media;
+  }
+  .navigations {
+    grid-area: navigations;
+  }
+  .nav {
+    padding: 1% 0.2%;
+    display: grid;
+    grid-template-areas:
       "social-media"
       "navigations";
-    }
-    .social-media {
-      text-align: center;
-      padding: 4% 5%;
-      a {
-        padding: 0 10px;
-      }
-    }
-  
-    .navigations {
-      text-align: center;
-      padding: 0.5% 0;
+  }
+
+  .social-media {
+    text-align: center;
+    padding: 4% 5%;
+    a {
+      padding: 0 10px;
     }
   }
-  
+
+  .navigations {
+    text-align: center;
+    padding: 0.5% 0;
+  }
+}

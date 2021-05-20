@@ -296,6 +296,16 @@ header h3 {
   font-weight: 800;
 }
 
+header #new-portfolio-link {
+  color: #79adfc;
+  font-weight: 800;
+  font-size: 1.5rem;
+}
+
+header #new-portfolio-link:hover {
+  color: #fc6060;
+}
+
 @media only screen and (max-width: 500px) {
   header .background-img {
     width: 100%;
@@ -363,12 +373,23 @@ footer .webicons img {
   font-size: 1.1rem;
 }
 
-a:link, a:visited {
+a:link,
+a:visited {
   color: white;
   text-decoration: none;
 }
 
 @media (max-width: 500px) {
+  .social-media {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: social-media;
+  }
+  .navigations {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: navigations;
+  }
   .nav {
     padding: 1% 0.2%;
     display: -ms-grid;
